@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_clinic_info_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "envelope"
+  },
+  "options": {},
+  "attributes": {
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}

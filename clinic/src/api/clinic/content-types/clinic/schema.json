@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinics",
+  "info": {
+    "singularName": "clinic",
+    "pluralName": "clinics",
+    "displayName": "Clinic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "OpeningHours": {
+      "displayName": "Opening Hours",
+      "type": "component",
+      "repeatable": false,
+      "component": "clinic-info.opening-hours"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "clinic-info.contact"
+    },
+    "AddressInfos": {
+      "displayName": "Address",
+      "type": "component",
+      "repeatable": false,
+      "component": "clinic-info.address"
+    }
+  }
+}

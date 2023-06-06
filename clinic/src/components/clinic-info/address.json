@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_clinic_info_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "plus-square"
+  },
+  "options": {},
+  "attributes": {
+    "Address": {
+      "type": "string"
+    }
+  }
+}
